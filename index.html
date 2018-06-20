@@ -1,0 +1,174 @@
+<!-- DOCTYPE definiert das Format des Dokuments. Es markiert also ein HTML5 Dokument -->
+<!DOCTYPE html>
+<!--Nun wird die Sprache der Seite definiert.-->
+<html lang="de">
+
+<!-- Der <head> Bereich enthält alles, was für den Besucher nicht sichtbar sein soll. Der Kopf der seite -->
+<head>
+
+    <!--Hier wird das Charsett festgelegt damit auch sonderzeichen wie ö,ä,ü dargestellt werden-->
+    <meta charset="UTF-8">
+
+    <!-- Der Viewport ist die Anzeigefläche des Endgeräts, damit startet das responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Nun wird das zusätzliche Stylesheet eingebunden.-->
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+
+
+    <!--Nun Folgen die Restlichen <meta tags>, diese Können mit einem meta tag generator erstellt werden.-->
+    <!--Die meta tags sind erstellt mit: https://www.metaner.de/metagen/metagenerator.html-->
+    <meta name="author" content="Daan de Dios">
+    <meta name="publisher" content="Daan de Dios">
+    <meta name="copyright" content="Daan de Dios">
+    <meta name="description"
+          content="Dies ist eine Testbeschreibung für eine vorlage. Diese Vorlage wird bei einer Prüfung verwendet.">
+    <meta name="keywords"
+          content="Firma, Angebot, Artikel, Dienstleistungen, Team, Super, Webseite, einwandfrei, erfolgreich, bekannt">
+    <meta name="page-topic" content="Dienstleistung">
+    <meta name="page-type" content="Produktinfo">
+    <meta name="audience" content="Alle">
+    <meta name="robots" content="index, follow">
+
+
+    <!--Mit <titel> Wird der Titel der Webseite gesetzt. Dieser ist für die Indexierung wichtig.-->
+    <title>Grid-Layout-2</title>
+
+</head>
+<body>
+
+<!--Haupt wrapper - Umfasst die ganze Hompage-->
+<div class="wrapper">
+    <!--main-nav ist die Haupt Navigation auf der Hompage-->
+    <nav class="main-nav">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="Produkte/produkte.html">Produkte</a></li>
+            <li><a href="über%20uns/über_uns.html">Über uns</a></li>
+            <li><a href="Kontakt/kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <!--Start-top-content section, Der Obere Teil der Webseite-->
+    <section class="top-container">
+        <header class="showcase">
+            <h1>Vorlage für Prüfung</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ipsam! Nihil quo minima nulla atque!</p>
+            <a href="#" class="btn">Dienstleistungen</a>
+        </header>
+
+        <!--Top Box a Rechts neben showcase-->
+        <div class="top-box top-box-a">
+            <h4>Abo a</h4>
+            <p class="price">199.-</p>
+            <a href="#" class="btn">Kaufen</a>
+        </div>
+
+        <!--Top Box b Unter der topbox a-->
+        <div class="top-box top-box-b">
+            <h4>Abo b</h4>
+            <p class="price">500.-</p>
+            <a href="#" class="btn">Kaufen</a>
+        </div>
+
+        <!--Ende von Section top-container-->
+    </section>
+
+
+
+
+
+
+    <!--Start-In dieser Section sind die Boxen beschrieben. Mitlerer Teil der Webseite-->
+    <section class="boxes">
+
+
+        <!--Nun Folgt die erste Box-->
+        <div class="box">
+            <i><img src="img/home/icons/boxes.svg" alt="boxes.svg" title="Produkte"></i>
+            <h3>Produkte</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A est provident sed.</p>
+        </div>
+
+        <!--Nun die zweite Box-->
+        <div class="box">
+            <i><img src="img/home/icons/users-cog.svg" alt="users-cog.svg" title="Dienstleistungen"></i>
+            <h3>Dienstleistungen</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A est provident sed.</p>
+        </div>
+
+        <!--Nun die dritte Box-->
+        <div class="box">
+            <i><img src="img/home/icons/address-card.svg" alt="address-card.svg" title="Kontakt"></i>
+            <h3>Produkte</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A est provident sed.</p>
+        </div>
+
+        <!--Nun die vierte Box-->
+        <div class="box">
+            <i><img src="img/home/icons/address-card.svg" alt="address-card.svg" title="Kontakt"></i>
+            <h3>Produkte</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A est provident sed.</p>
+        </div>
+
+        <!--End von der section Boxes-->
+    </section>
+
+
+
+
+
+
+    <!--Start-In dieser Section ist der info b kasten, dieser befindet sich auf der unternen seite.-->
+    <section class="info">
+        <img src="img/home/info/img_info_1.jpg" alt="img_1.jpg" title="Deine Firma">
+        <div>
+            <h2>Dein Geschäft im Web!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem corporis dolorem eaque id, non
+                officiis
+                perferendis, quod repudiandae sit unde vero. A asperiores dignissimos dolore, eligendi laboriosam modi
+                nostrum officiis provident rem ullam. Aspernatur delectus nesciunt optio quidem repellendus?</p>
+            <a href="#" class="btn">Erfahre mehr</a>
+        </div>
+
+        <!--End von der section info (b)-->
+    </section>
+
+
+
+
+
+    <!--Start-In dieser section sind diverse Bilder, dese befinden sich unteren ende der Seite.-->
+    <section class="portfolio">
+        <h3>Diverse Bilder</h3>
+        <img src="img/home/portfolio/img_portfolio_1.jpg" alt="Das Bild ist nicht vorhanden" title="Bilder">
+        <img src="img/home/portfolio/img_portfolio_2.jpg" alt="Das Bild ist nicht vorhanden" title="Bilder">
+        <img src="img/home/portfolio/img_portfolio_3.jpg" alt="Das Bild ist nicht vorhanden" title="Bilder">
+        <img src="img/home/portfolio/img_portfolio_4.jpg" alt="Das Bild ist nicht vorhanden" title="Bilder">
+        <img src="img/home/portfolio/img_portfolio_5.jpg" alt="Das Bild ist nicht vorhanden" title="Bilder">
+        <img src="img/home/portfolio/img_portfolio_6.jpg" alt="Das Bild ist nicht vorhanden" title="Bilder">
+        <img src="img/home/portfolio/img_portfolio_7.jpg" alt="Das Bild ist nicht vorhanden" title="Bilder">
+        <img src="img/home/portfolio/img_portfolio_8.jpg" alt="Das Bild ist nicht vorhanden" title="Bilder">
+        <img src="img/home/portfolio/img_portfolio_9.jpg" alt="Das Bild ist nicht vorhanden" title="Bilder">
+    </section>
+
+
+
+
+
+    <!--Start-Des Footers, der footer befindet sich am ende der Webseite.-->
+    <footer>
+        <p>&copy; by Daan de Dios 2018</p>
+    </footer>
+    <!--Ende-Des Footers-->
+
+
+
+    <!--End Wrapper-->
+</div>
+
+</body>
+</html>

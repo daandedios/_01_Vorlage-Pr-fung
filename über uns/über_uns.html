@@ -1,0 +1,103 @@
+<!-- DOCTYPE definiert das Format des Dokuments. Es markiert also ein HTML5 Dokument -->
+<!DOCTYPE html>
+<!--Nun wird die Sprache der Seite definiert.-->
+<html lang="de">
+
+<!-- Der <head> Bereich enthält alles, was für den Besucher nicht sichtbar sein soll. Der Kopf der seite -->
+<head>
+
+    <!--Hier wird das Charsett festgelegt damit auch sonderzeichen wie ö,ä,ü dargestellt werden-->
+    <meta charset="UTF-8">
+
+    <!-- Der Viewport ist die Anzeigefläche des Endgeräts, damit startet das responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Nun wird das zusätzliche Stylesheet eingebunden.-->
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+
+
+    <!--Nun Folgen die Restlichen <meta tags>, diese Können mit einem meta tag generator erstellt werden.-->
+    <!--Die meta tags sind erstellt mit: https://www.metaner.de/metagen/metagenerator.html-->
+    <meta name="author" content="Daan de Dios">
+    <meta name="publisher" content="Daan de Dios">
+    <meta name="copyright" content="Daan de Dios">
+    <meta name="description"
+          content="Dies ist eine Testbeschreibung für eine vorlage. Diese Vorlage wird bei einer Prüfung verwendet.">
+    <meta name="keywords"
+          content="Firma, Angebot, Artikel, Dienstleistungen, Team, Super, Webseite, einwandfrei, erfolgreich, bekannt">
+    <meta name="page-topic" content="Dienstleistung">
+    <meta name="page-type" content="Produktinfo">
+    <meta name="audience" content="Alle">
+    <meta name="robots" content="index, follow">
+
+
+    <!--Mit <titel> Wird der Titel der Webseite gesetzt. Dieser ist für die Indexierung wichtig.-->
+    <title>über-uns</title>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <!--main-nav ist die Haupt Navigation auf der Hompage-->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Produkte/produkte.html">Produkte</a></li>
+            <li><a class="active" href="über_uns.html">Über uns</a></li>
+            <li><a  href="../Kontakt/kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="titel-team">Unser Team</h1>
+    </header>
+
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img src="../img/kontakt/img_kontakt-1.jpg" alt="Jane" style="width:100%">
+            <div class="container">
+                <h2>Jane Doe</h2>
+                <p class="title">CEO & Founder</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img class="img-übeuns" src="../img/kontakt/img_kontakt-2.jpg" alt="Mike" style="width:100%">
+            <div class="container">
+                <h2>Mike Ross</h2>
+                <p class="title">Art Director</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img class="img-übeuns" src="../img/kontakt/img_kontakt-3.jpg" alt="John" style="width:100%">
+            <div class="container">
+                <h2>John Doe</h2>
+                <p class="title">Designer</p>
+                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                <p>example@example.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--Start-Des Footers, der footer befindet sich am ende der Webseite.-->
+    <footer>
+        <p class="footer">&copy; by Daan de Dios 2018</p>
+    </footer>
+    <!--Ende-Des Footers-->
+</div>
+</body>
+</html>

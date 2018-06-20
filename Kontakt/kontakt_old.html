@@ -1,0 +1,88 @@
+<!-- DOCTYPE definiert das Format des Dokuments. Es markiert also ein HTML5 Dokument -->
+<!DOCTYPE html>
+<!--Nun wird die Sprache der Seite definiert.-->
+<html lang="de">
+
+<!-- Der <head> Bereich enthält alles, was für den Besucher nicht sichtbar sein soll. Der Kopf der seite -->
+<head>
+
+    <!--Hier wird das Charsett festgelegt damit auch sonderzeichen wie ö,ä,ü dargestellt werden-->
+    <meta charset="UTF-8">
+
+    <!-- Der Viewport ist die Anzeigefläche des Endgeräts, damit startet das responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Nun wird das zusätzliche Stylesheet eingebunden.-->
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+
+
+    <!--Nun Folgen die Restlichen <meta tags>, diese Können mit einem meta tag generator erstellt werden.-->
+    <!--Die meta tags sind erstellt mit: https://www.metaner.de/metagen/metagenerator.html-->
+    <meta name="author" content="Daan de Dios">
+    <meta name="publisher" content="Daan de Dios">
+    <meta name="copyright" content="Daan de Dios">
+    <meta name="description"
+          content="Dies ist eine Testbeschreibung für eine vorlage. Diese Vorlage wird bei einer Prüfung verwendet.">
+    <meta name="keywords"
+          content="Firma, Angebot, Artikel, Dienstleistungen, Team, Super, Webseite, einwandfrei, erfolgreich, bekannt">
+    <meta name="page-topic" content="Dienstleistung">
+    <meta name="page-type" content="Produktinfo">
+    <meta name="audience" content="Alle">
+    <meta name="robots" content="index, follow">
+
+
+    <!--Mit <titel> Wird der Titel der Webseite gesetzt. Dieser ist für die Indexierung wichtig.-->
+    <title>Kontakt</title>
+
+</head>
+<body>
+
+<!--Haupt wrapper - Umfasst die ganze Hompage-->
+<div class="wrapper">
+    <!--main-nav ist die Haupt Navigation auf der Hompage-->
+    <nav class="main-nav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Produkte/produkte.html">Produkte</a></li>
+            <li><a href="../über%20uns/über_uns.html">Über uns</a></li>
+            <li><a class="active" href="kontakt_old.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section class="form">
+                <label for="fname">Vorname</label>
+                <input type="text" id="fname" name="firstname" placeholder="Dein Name..">
+
+                <label for="lname">Nachname</label>
+                <input type="text" id="lname" name="lastname" placeholder="Dein Nachname..">
+
+                <label for="country">Land</label>
+                <select id="country" name="country">
+                    <option value="schweiz">Schweiz</option>
+                    <option value="deutschland">Deutschland</option>
+                    <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Titel</label>
+                <textarea id="subject" name="subject" placeholder="Deine Nachricht.."></textarea>
+
+                <input type="submit" value="Submit">
+    </section>
+
+
+
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10799.81599994486!2d9.6316597!3d47.41283839999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b16a06bebc837%3A0x40fa807a9ccee460!2sSFS+intec+AG!5e0!3m2!1sde!2sch!4v1528278077962" width="1500" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,436 @@
+/*Variables*/
+:root {
+    --primary: #dddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+
+
+/*#############start-home#####################*/
+/*----------------------html--------------------------*/
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+/*----------------------body--------------------------*/
+body {
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+/*----------------------img--------------------------*/
+img {
+    max-width: 100%;
+}
+
+/*----------------------wrapper--------------------------*/
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+
+
+
+
+
+/*##################################Start-Navigation#################################*/
+
+ /*----------------------main-nav-liste--------------------------*/
+    .main-nav ul {
+        display: grid;
+        grid-gap: 20px;
+        padding: 0;
+        list-style: none;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+/*----------------------main-nav link style--------------------------*/
+        .main-nav a {
+            background: var(--primary);
+            display: block;
+            text-decoration: none;
+            padding: 0.8rem;
+            text-align: center;
+            color: var(--dark);
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow);
+            list-style: none;
+        }
+
+/*----------------------main-nav active menu--------------------------*/
+            .active {
+                background: var(--dark) !important;
+                color: var(--light)!important;
+            }
+
+ /*----------------------main-nav hover style--------------------------*/
+            .main-nav a:hover {
+                background: var(--dark);
+                color: var(--light);
+            }
+/*##################################ende-Navigation#################################*/
+
+
+
+
+
+
+
+
+/*##################################Start-top-container#################################*/
+
+/*----------------------top-container--------------------------*/
+    .top-container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas:
+        'showcase showcase showcase showcase top-box-a'
+        'showcase showcase showcase showcase top-box-b';
+    }
+
+/*----------------------showcase--------------------------*/
+        .showcase {
+            grid-area: showcase;
+            min-height: 400px;
+            background-size: cover;
+            background: url(https://image.ibb.co/kYJK8x/showcase.jpg) center;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            box-shadow: var(--shadow);
+        }
+
+/*----------------------klasse btn--------------------------*/
+            .btn {
+                background: var(--dark);
+                color: var(--light);
+                padding: 0.6rem 1.3rem;
+                text-decoration: none;
+                border: 0;
+            }
+
+/*----------------------showcase  h1--------------------------*/
+            .showcase h1 {
+                font-size: 4rem;
+                margin-bottom: 0;
+                color: var(--light);
+            }
+
+
+/*----------------------showcase  p--------------------------*/
+            .showcase p {
+                font-size: 1.3rem;
+                margin-top: 0;
+                color: var(--light);
+            }
+
+/*---------------------top-box--------------------------*/
+        .top-box {
+            background: var(--primary);
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+        }
+
+/*----------------------top-box a--------------------------*/
+            .top-box-a {
+                grid-area: top-box-a;
+            }
+
+/*----------------------top-box b--------------------------*/
+            .top-box-b {
+                grid-area: top-box-b;
+            }
+
+/*----------------------top-box b--------------------------*/
+            .top-box-c {
+                grid-area: top-box-c;
+            }
+
+/*----------------------top-box klasse preis--------------------------*/
+                .top-box .price {
+                    font-size: 2.5rem;
+                }
+/*##################################end-top-container#################################*/
+
+
+
+
+
+/*##################################Start-section-boxes#################################*/
+
+/*----------------------klasse boxes (produkte)--------------------------*/
+    .boxes {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+/*----------------------klasse boxe (produkte)--------------------------*/
+        .box {
+            background: var(--primary);
+            text-align: center;
+            padding: 1.5rem 2rem;
+            box-shadow: var(--shadow);
+        }
+
+/*----------------------klasse boxe img--------------------------*/
+        .box img {
+            width: 6rem; !important;
+            height: 6rem; !important;
+        }
+
+/*##################################ende-section-boxes#################################*/
+
+
+
+
+
+/*##################################Start-section-info#################################*/
+
+/*----------------------klasse info--------------------------*/
+    .info {
+        background: var(--primary);
+        box-shadow: var(--shadow);
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem;
+    }
+/*##################################ende-section-info#################################*/
+
+
+
+
+
+
+/*##################################Start-section-portfolio#################################*/
+/*----------------------klasse portfolio--------------------------*/
+    .portfolio {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+/*----------------------klasse portfolio img--------------------------*/
+        .portfolio img {
+            width: 100%;
+            box-shadow: var(--shadow);
+        }
+/*##################################ende-section-portfolio#################################*/
+
+
+
+
+
+/*----------------------footer--------------------------*/
+    footer {
+        margin-top: 2rem;
+        background: var(--dark);
+        color: var(--light);
+        text-align: center;
+        padding: 1rem;
+    }
+/*#############end-home#####################*/
+
+
+
+
+
+
+
+/*#############start-produkte#####################*/
+/*#############end-produkte#####################*/
+
+
+
+
+/*#############start-über uns#####################*/
+/* -------------------------------überuns-container-style------------------------------- */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.titel-team {
+    text-align: center;
+}
+/*#############end-über uns#####################*/
+
+
+
+
+
+
+/*#############start-kontakt#####################*/
+/*##################################Start-form-style#################################*/
+/* -------------------------------form-tex-style------------------------------- */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* -------------------------------form-submit-style------------------------------- */
+.submit {
+    /*background-color: #4CAF50;*/
+    background: var(--dark);
+    box-shadow: var(--shadow);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-style: normal;
+    text-decoration: none;
+}
+.submit:hover {
+    background: var(--light);
+    color: var(--dark);
+    /*background-color: #45a049;*/
+}
+
+/* -------------------------------form-titel-style------------------------------- */
+.form-titel {
+    box-shadow: var(--shadow);
+    background: var(--primary);
+    grid-gap: 30px;
+    /*padding: 1rem; */
+    padding-left: 1rem;
+}
+
+#subject {
+    height: 10rem;
+}
+
+/* -------------------------------form-container-style------------------------------- */
+.form {
+    display: grid;
+}
+
+/* -------------------------------map-container-style------------------------------- */
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+/*##################################end-form-style#################################*/
+/*#############end-kontakt#####################*/
+
+
+
+
+
+
+
+
+/*##################################Start-media-queries#################################*/
+/* -------------------------------Media Queries------------------------------- */
+@media (max-width: 700px) {
+    .top-container {
+        grid-template-areas:
+        'showcase showcase showcase showcase showcase'
+        'top-box-a top-box-b';
+    }
+
+    .showcase h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .info .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .top-container {
+        grid-template-areas:
+        'showcase showcase showcase showcase showcase'
+        'top-box-a top-box-a top-box-a top-box-a top-box-a'
+        'top-box-b top-box-b top-box-b top-box-b top-box-b';
+    }
+}
+
+
+@media (max-width: 750px) {
+    .row {
+        grid-template-columns: 1fr; !important;
+        display: block;
+        grid-gap: 30px;
+    }
+    .img-übeuns {
+        margin-top: 5rem;
+    }
+}
+/*##################################end-media-queries#################################*/
+
+/*########ende-CSS##############*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
